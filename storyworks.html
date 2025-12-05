@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBD Brief Generator</title>
+    <link rel="stylesheet" href="storyworks.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <h1 class="logo">IBD Brief Generator</h1>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('home')" class="active">Home</a></li>
+            <li><a href="#" onclick="showSection('features')">Features</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section id="home" class="section">
+    <div class="hero-text">
+        <h2>AI-Powered Briefing Assistant</h2>
+        <p>This assistant will help in the Discovery Phase, by providing help creating materials such as the brief and the scope of work.</p>
+        <div class="hero-buttons">
+            <button onclick="showSection('features')" class="btn">Explore Features</button>
+            <button onclick="showSection('contact')" class="btn-outline">Contact Us</button>
+        </div>
+    </div>
+
+
+    
+    <div class="description">
+        <h2>What is it actually?</h2>
+        <p>It's a centralized internal AI-enabled briefing tool that will help to collect information, fill gaps and generate complete, consistent, creative briefs for projects.</p>
+
+        <h2>How does it work?</h2>
+        <p>The AI analyzes the information from the first meeting with the client. The brief is created by the notes and information gathered from the meeting, the brief from the client, and information from the agency. It gathers the information and creates a SOW according to the project and client.</p>
+
+        <p>This tool works like a guided assistant that either side can use to make their workflow smoother, initiate easy communication, and align quickly with the InnovatebyDay theme, supporting government and cultural organizations.</p>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="section" style="display:none;">
+    <h2 class="section-title">AI Tool Features</h2>
+    <p class="section-subtitle">Everything the AI-powered assistant can do to make your workflow smoother and more efficient.</p>
+
+    <ul class="feature-list">
+        <li>Upload meeting notes</li>
+        <li>Paste client brief</li>
+        <li>Answer guided intake questions</li>
+    </ul>
+
+    <h3 class="subheading">AI Generates:</h3>
+    <ul class="feature-list">
+        <li>Creative Brief</li>
+        <li>Gap Analysis</li>
+        <li>Visual Summary</li>
+        <li>Scope of Work Sections</li>
+    </ul>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section" style="display:none;">
+    <h2>Contact Us</h2>
+    <p>Email: info@innovatebyday.com</p>
+    <p>Phone: +1 (000) 000-0000</p>
+</section>
+
+<footer>
+    <p>© 2025 IBD Brief Generator</p>
+</footer>
+
+<script>
+function showSection(sectionId){
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(sec => sec.style.display = 'none');
+    // Show selected section
+    document.getElementById(sectionId).style.display = 'block';
+
+    // Update active link
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => link.classList.remove('active'));
+    links.forEach(link => {
+        if(link.getAttribute('onclick').includes(sectionId)){
+            link.classList.add('active');
+        }
+    });
+}
+</script>
+
+</body>
+</html>
