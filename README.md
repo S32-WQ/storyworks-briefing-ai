@@ -1,0 +1,4 @@
+My storywork idea is helping IBD in their initial phases of their creative process. My website shows the feature as well as what the idea is all about in a user friendly manner.
+There are many challanges I faced during the deployment of creating the website some of them are ensuring page navigation without showing all content at once styling issues and css not loading for that I had to generate neww codes and look for errors. while hosting on the github page first it didnt showed me the website as it had a 404 error I overcame it by simply renaming my file to index.html and I could see my website.
+For Javascript I added dynamic section switching this allowed user to click home features and contact and only information related to those will pop up and not other information
+For deployment I used github as it is free and kind of easy to use platform with having multiple features like preview and is very user friendly.
